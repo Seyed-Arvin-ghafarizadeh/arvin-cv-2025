@@ -1,94 +1,115 @@
 # Arvin Ghafrizaadeh - CV Portfolio
 
-A professional CV website built with Next.js, TypeScript, and Tailwind CSS showcasing AI Engineering and Systems Architecture expertise.
+A professional CV website built with HTML, CSS, and JavaScript showcasing AI Engineering and Systems Architecture expertise.
 
 ## 🚀 Getting Started
 
-### Prerequisites
+This is a static website that can be viewed directly in a browser. No build process required!
 
-Make sure you have Node.js installed on your system. You can download it from [nodejs.org](https://nodejs.org/).
+### Option 1: Direct Viewing
 
-### Installation
+1. Simply open `index.html` in your web browser
+2. That's it! The site will work immediately
 
-1. Install dependencies:
+### Option 2: Local Server (Recommended)
+
+For best results, use a local server:
+
+**Using Python:**
 ```bash
-npm install
+# Python 3
+python -m http.server 8000
+
+# Then open http://localhost:8000
 ```
 
-2. Run the development server:
+**Using Node.js:**
 ```bash
-npm run dev
+# Install http-server globally
+npm install -g http-server
+
+# Run server
+http-server -p 8000
+
+# Then open http://localhost:8000
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser to see your CV.
+**Using VS Code:**
+- Install "Live Server" extension
+- Right-click on `index.html` and select "Open with Live Server"
 
 ## 📋 Features
 
 - **Professional Design**: Modern, clean layout with professional styling
 - **Responsive**: Works perfectly on desktop, tablet, and mobile devices
-- **Fast**: Built with Next.js for optimal performance
+- **Fast**: Pure HTML/CSS/JS - no framework overhead
 - **Accessible**: Semantic HTML and proper contrast ratios
+- **Animated**: Smooth scroll animations and fade-in effects
+- **Modern UI**: Gradient designs, glass-morphism effects, and hover animations
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 14 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Deployment**: Ready for Vercel, Netlify, or any static hosting
+- **HTML5**: Semantic markup
+- **CSS3**: Modern styling with animations and gradients
+- **JavaScript (Vanilla)**: Pure JavaScript for interactivity
+- **Lucide Icons**: Modern icon library via CDN
+- **Google Fonts**: Inter font family
 
 ## 📁 Project Structure
 
 ```
-src/
-├── app/
-│   ├── layout.tsx       # Root layout
-│   ├── page.tsx         # Main CV page
-│   └── globals.css      # Global styles
-└── components/
-    ├── Header.tsx       # Personal info & contact
-    ├── Skills.tsx       # Skills & technologies
-    ├── Education.tsx    # Education background
-    ├── Experience.tsx   # Professional experience
-    ├── Projects.tsx     # Selected projects
-    └── Contact.tsx      # Contact information
+├── index.html      # Main HTML file
+├── styles.css      # All styles and animations
+├── script.js       # JavaScript functionality
+└── README.md       # This file
 ```
 
 ## 🎨 Customization
 
-### Colors
-The color scheme uses a blue primary palette. You can customize colors in `tailwind.config.js`.
-
 ### Content
-Update your personal information in the respective components:
-- Personal details in `src/components/Header.tsx`
-- Skills in `src/components/Skills.tsx`
-- Education in `src/components/Education.tsx`
-- Experience in `src/components/Experience.tsx`
-- Projects in `src/components/Projects.tsx`
+
+Edit the JavaScript data objects in `script.js`:
+
+- **Skills**: Modify `skillsData` object
+- **Education**: Modify `educationData` array
+- **Experience**: Modify `experienceData` array
+- **Projects**: Modify `projectsData` array
 
 ### Styling
-Global styles are in `src/app/globals.css`. Component-specific styles use Tailwind classes.
+
+All styles are in `styles.css`. You can customize:
+
+- Colors: Edit CSS variables in `:root`
+- Layout: Modify grid and flexbox properties
+- Animations: Adjust animation keyframes
+- Typography: Change font sizes and weights
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### GitHub Pages
+
 1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Deploy automatically
+2. Go to repository Settings > Pages
+3. Select branch and `/docs` folder (if using docs folder)
+4. Or select `/root` folder if files are in root
+5. Your site will be live at `https://yourusername.github.io/repository-name`
 
 ### Other Platforms
-The app can be deployed to Netlify, GitHub Pages, or any static hosting service:
 
-```bash
-npm run build
-```
+Upload the following files to any static hosting service:
+- `index.html`
+- `styles.css`
+- `script.js`
 
-Upload the `out` folder to your hosting provider.
+Recommended platforms:
+- **Netlify**: Drag and drop or connect GitHub
+- **Vercel**: Connect GitHub repository
+- **GitHub Pages**: Free hosting for static sites
+- **Cloudflare Pages**: Fast global CDN
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
 
 ---
 
