@@ -8,8 +8,8 @@ This is a static website that can be viewed directly in a browser. No build proc
 
 ### Option 1: Direct Viewing
 
-1. Simply open `index.html` in your web browser
-2. That's it! The site will work immediately
+- Open `docs/index.html` in your web browser
+- That's it! The site will work immediately
 
 ### Option 2: Local Server (Recommended)
 
@@ -17,24 +17,21 @@ For best results, use a local server:
 
 **Using Python:**
 ```bash
-# Python 3
+cd docs
 python -m http.server 8000
-
 # Then open http://localhost:8000
 ```
 
 **Using Node.js:**
 ```bash
-# Install http-server globally
+cd docs
 npm install -g http-server
-
-# Run server
 http-server -p 8000
-
 # Then open http://localhost:8000
 ```
 
 **Using VS Code:**
+- Open the `docs` folder in VS Code
 - Install "Live Server" extension
 - Right-click on `index.html` and select "Open with Live Server"
 
@@ -58,18 +55,18 @@ http-server -p 8000
 ## 📁 Project Structure
 
 ```
-├── index.html      # Main HTML file
-├── styles.css      # All styles and animations
-├── script.js       # JavaScript functionality
-└── README.md       # This file
+├── docs/
+│   ├── index.html      # Main HTML file
+│   ├── styles.css      # All styles and animations
+│   └── script.js       # JavaScript functionality
+└── README.md           # This file
 ```
 
 ## 🎨 Customization
 
 ### Content
 
-Edit the JavaScript data objects in `script.js`:
-
+Edit the JavaScript data objects in `docs/script.js`:
 - **Skills**: Modify `skillsData` object
 - **Education**: Modify `educationData` array
 - **Experience**: Modify `experienceData` array
@@ -77,8 +74,7 @@ Edit the JavaScript data objects in `script.js`:
 
 ### Styling
 
-All styles are in `styles.css`. You can customize:
-
+All styles are in `docs/styles.css`. You can customize:
 - Colors: Edit CSS variables in `:root`
 - Layout: Modify grid and flexbox properties
 - Animations: Adjust animation keyframes
@@ -90,13 +86,12 @@ All styles are in `styles.css`. You can customize:
 
 1. Push your code to GitHub
 2. Go to repository Settings > Pages
-3. Select branch and `/docs` folder (if using docs folder)
-4. Or select `/root` folder if files are in root
-5. Your site will be live at `https://yourusername.github.io/repository-name`
+3. Select the branch and `/docs` folder as the source (**RECOMMENDED**)
+4. Your site will be live at `https://yourusername.github.io/repository-name`
 
 ### Other Platforms
 
-Upload the following files to any static hosting service:
+Upload the following files from `docs` to any static hosting service:
 - `index.html`
 - `styles.css`
 - `script.js`
